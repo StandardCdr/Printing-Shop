@@ -270,3 +270,9 @@ body {
   margin: 0;
   color: var(--bodyTextColor);
 }
+
+footer p {
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+}
