@@ -1,0 +1,272 @@
+:root {
+  --default: "Atkinson Hyperlegible";
+  --blue: #088f8f;
+  --dark: #333;
+}
+body {
+  background: #fff;
+}
+body.disablescroll {
+  overflow-y: hidden;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto 0 auto;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  padding: 40px 0;
+  transition: 0.3s;
+}
+header.fixed {
+  background: #088f8f;
+  padding: 0;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0);
+}
+a.logo {
+  float: left;
+}
+a.logo img {
+  margin: 0;
+  padding: 10px;
+  float: left;
+  width: 70px;
+  height: 70px;
+}
+
+a.showmenu,
+a.hidemenu {
+  display: none;
+}
+.menublock {
+  float: right;
+  margin: 0 0 0 0;
+}
+nav,
+nav ul,
+nav ul li {
+  float: left;
+}
+nav ul li {
+  font-family: var(--default);
+  font-size: 20px;
+  color: #fff;
+  margin-right: 30px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+nav ul li:last-of-type {
+  margin-right: 0;
+}
+nav ul li a {
+  float: left;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 20px;
+}
+nav ul li.active a {
+  background: #088f8f;
+}
+
+.banner {
+  float: left;
+  width: 100%;
+  background: #088f8f;
+  padding: 200px 0 100px 0;
+}
+.banner .text {
+  text-transform: capitalize;
+  float: left;
+  width: 30%;
+  font-family: var(--default);
+}
+.banner .text h1 {
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-size: 72px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.wel {
+  white-space: nowrap;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.banner .text p {
+  font-size: 18px;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.banner .text a {
+  font-size: 21px;
+  color: var(--blue);
+  text-decoration: none;
+  font-style: italic;
+}
+.banner .visual {
+  float: right;
+  width: 58%;
+}
+
+.img-default {
+  border-radius: 10%;
+}
+
+.about {
+  float: left;
+  width: 100%;
+  padding: 100px 0 100px 0;
+}
+.about .text {
+  float: left;
+  width: 100%;
+  font-family: var(--default);
+}
+.about .text h2 {
+  width: 30%;
+  font-size: 72px;
+  color: #000;
+  margin-bottom: 50px;
+}
+.about .text .para {
+  width: 58%;
+}
+.about .text p {
+  text-transform: capitalize;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 20px;
+}
+.about .visual {
+  float: left;
+  width: 100%;
+  margin-top: 60px;
+}
+.about .visual img {
+  float: left;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/8;
+}
+.fit {
+  border-radius: 5%;
+}
+
+.services {
+  float: left;
+  width: 100%;
+  padding: 100px 0 100px 0;
+  font-family: var(--default);
+}
+.services h2 {
+  font-size: 72px;
+  color: #000;
+  margin-bottom: 50px;
+}
+.services-items {
+  float: left;
+  width: 100%;
+}
+.services-items .item {
+  float: left;
+  width: 30%;
+  margin-bottom: 60px;
+  padding: 40px 40px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #ddd;
+  color: #000;
+  transition: 0.3s;
+}
+.services-items .item.type2 {
+  background: #088f8f;
+  border: 1px solid #088f8f;
+  color: #fff;
+}
+.services-items .item i {
+  width: 60px;
+  height: 60px;
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.services-items .item h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.services-items .item p {
+  font-size: 16px;
+}
+
+:root {
+  --primary: #088f8f;
+  --primaryLight: #ffba43;
+  --secondary: #ffba43;
+  --secondaryLight: #ffba43;
+  --headerColor: #1a1a1a;
+  --bodyTextColor: #4e4b66;
+  --bodyTextColorWhite: #fafbfc;
+  /* 13px - 16px */
+  --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+  /* 31px - 49px */
+  --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+  --bodyFontSize: 1rem;
+  /* 60px - 100px top and bottom */
+  --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  /* prevents padding from affecting height and width */
+  box-sizing: border-box;
+}
+.cs-topper {
+  font-family: var(--default);
+  font-size: var(--topperFontSize);
+  line-height: 1.2em;
+  text-transform: uppercase;
+  text-align: inherit;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.cs-title {
+  font-family: var(--default);
+  font-size: var(--headerFontSize);
+  font-weight: 900;
+  line-height: 1.2em;
+  text-align: inherit;
+  max-width: 43.75rem;
+  margin: 0 0 1rem 0;
+  color: var(--headerColor);
+  position: relative;
+}
+
+.cs-text {
+  font-family: var(--default);
+  font-size: var(--bodyFontSize);
+  line-height: 1.5em;
+  text-align: inherit;
+  width: 100%;
+  max-width: 40.625rem;
+  margin: 0;
+  color: var(--bodyTextColor);
+}
