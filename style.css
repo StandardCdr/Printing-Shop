@@ -1,6 +1,10 @@
 :root {
   --default: "Atkinson Hyperlegible";
-  --blue: #088f8f;
+  --blue: radial-gradient(
+    circle at 10% 20%,
+    rgb(0, 93, 133) 0%,
+    rgb(0, 181, 149) 90%
+  );
   --dark: #333;
 }
 body {
@@ -24,7 +28,11 @@ header {
   transition: 0.3s;
 }
 header.fixed {
-  background: #088f8f;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(0, 93, 133) 0%,
+    rgb(0, 181, 149) 90%
+  );
   padding: 0;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0);
 }
@@ -76,7 +84,11 @@ nav ul li.active a {
 .banner {
   float: left;
   width: 100%;
-  background: #088f8f;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(0, 93, 133) 0%,
+    rgb(0, 181, 149) 90%
+  );
   padding: 200px 0 100px 0;
 }
 .banner .text {
@@ -188,8 +200,16 @@ nav ul li.active a {
   transition: 0.3s;
 }
 .services-items .item.type2 {
-  background: #088f8f;
-  border: 1px solid #088f8f;
+  background: linear-gradient(
+    91.9deg,
+    rgb(94, 124, 121) 4.4%,
+    rgb(64, 224, 208) 89%
+  );
+  border: linear-gradient(
+    91.9deg,
+    rgb(94, 124, 121) 4.4%,
+    rgb(64, 224, 208) 89%
+  );
   color: #fff;
 }
 .services-items .item i {
@@ -208,7 +228,11 @@ nav ul li.active a {
 }
 
 :root {
-  --primary: #088f8f;
+  --primary: linear-gradient(
+    91.9deg,
+    rgb(94, 124, 121) 4.4%,
+    rgb(64, 224, 208) 89%
+  );
   --primaryLight: #ffba43;
   --secondary: #ffba43;
   --secondaryLight: #ffba43;
